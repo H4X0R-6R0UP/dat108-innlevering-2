@@ -1,5 +1,5 @@
 # dat108-innlevering-2
-DAT108 oblig1_gr3
+DAT108 oblig2_gr3
 
 **Medlemmer**:
 * Daniel Aarsand
@@ -7,3 +7,7 @@ DAT108 oblig1_gr3
 * Jason Arrey
 
 **Skjermdump fra utskrift av metodekjøring**:
+
+*Oppgave 1*
+
+![Oppgave1](./assets/oppgave1.png)
