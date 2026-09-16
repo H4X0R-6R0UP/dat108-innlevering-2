@@ -8,6 +8,6 @@ DAT108 oblig2_gr3
 
 **Skjermdump fra utskrift av metodekjøring**:
 
-*Oppgave 1
+*Oppgave 1*
 
 ![Oppgave1](./assets/oppgave1.png)

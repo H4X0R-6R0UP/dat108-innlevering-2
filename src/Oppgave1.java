@@ -56,12 +56,6 @@ public class Oppgave1 implements Runnable {
         if (traad2.isInterrupted()) {
             traad.interrupt();
         }
-        try {
-            traad.join();
-            traad2.join();
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
 
     }
 }
