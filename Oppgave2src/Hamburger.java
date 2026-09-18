@@ -24,4 +24,7 @@ public class Hamburger {
     public void setNeste(Hamburger neste) {
         this.neste = neste;
     }
+    public void increase() {
+        burger +=1 ;
+    }
 }
