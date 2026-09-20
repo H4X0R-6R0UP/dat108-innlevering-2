@@ -2,7 +2,6 @@ public class Kokk2 extends Thread {
 
     String navn;
     HamburgerBrett2 brett;
-    Hamburger burger;
 
     public Kokk2(HamburgerBrett2 brett, String navn) {
         this.navn = navn;
