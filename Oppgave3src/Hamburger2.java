@@ -1,8 +1,7 @@
-public class Hamburger {
-
+public class Hamburger2 {
     private int burger;
 
-    public Hamburger(int burger) {
+    public Hamburger2(int burger) {
         this.burger = burger;
     }
 
