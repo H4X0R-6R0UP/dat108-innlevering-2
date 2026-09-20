@@ -8,7 +8,6 @@ public class Kokk extends Thread {
     public Kokk(HamburgerBrett brett, String navn) {
         this.navn = navn;
         this.brett = brett;
-        this.burger = new Hamburger(0, null);
     }
 
     @Override
@@ -18,10 +17,10 @@ public class Kokk extends Thread {
     @Override
     public void run() {
 
-        while(true) {
+        while (true) {
             try {
-                brett.addBurger(burger);
-                System.out.print("\nKokk "+navn+" la på burger "+ burger.getBurger()+" nå er det "+ brett.mengde()+" burgere på brettet");
+                Thread.sleep((long)(Math.random() * (6000 - 2000 + 1)) + 2000);
+                brett.addBurger(navn);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }

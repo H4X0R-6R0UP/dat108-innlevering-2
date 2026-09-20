@@ -1,25 +1,21 @@
-public class Servitor extends Thread {
+public class Kokk2 extends Thread {
 
     String navn;
-    HamburgerBrett brett;
+    HamburgerBrett2 brett;
+    Hamburger burger;
 
-    public Servitor(HamburgerBrett brett, String navn) {
-        this.brett = brett;
+    public Kokk2(HamburgerBrett2 brett, String navn) {
         this.navn = navn;
-    }
-
-    @Override
-    public String toString() {
-        return "Burger ";
+        this.brett = brett;
     }
 
     @Override
     public void run() {
 
-        while(true) {
+        while (true) {
             try {
                 Thread.sleep((long)(Math.random() * (6000 - 2000 + 1)) + 2000);
-                brett.removeBurger(navn);
+                brett.addBurger2(navn);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }

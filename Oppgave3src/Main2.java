@@ -1,4 +1,4 @@
-public class Main implements Runnable{
+public class Main2 implements Runnable {
 
     public static synchronized void main(String[] args) throws InterruptedException {
 
@@ -6,12 +6,12 @@ public class Main implements Runnable{
         final String[] servitorer = {"Mia", "Per"};
         final int KAPASITET = 4;
         //skrivUtHeader(kokker, servitorer, KAPASITET);
-        HamburgerBrett brett = new HamburgerBrett(KAPASITET);
+        HamburgerBrett2 brett = new HamburgerBrett2(KAPASITET);
         for (String navn : kokker) {
-            new Kokk(brett, navn).start();
+            new Kokk2(brett, navn).start();
         }
         for (String navn : servitorer) {
-            new Servitor(brett, navn).start();
+            new Servitor2(brett, navn).start();
         }
     }
 
